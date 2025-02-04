@@ -42,47 +42,90 @@
 			</div>
 		</div>
 	</nav>
-	<section id="home-section" class="hero">
-		<div class="home-slider owl-carousel">
-			<div class="slider-item">
-				<div class="overlay"></div>
-				<div class="container-fluid px-md-0">
-					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-						<div class="one-third order-md-last img" style="background-image:url(images/download.avif);">
-							<div class="overlay"></div>
-							<div class="overlay-1"></div>
-						</div>
-						<div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-							<div class="text">
-								<span class="subheading">Hello! This is Sajal Srivastava</span>
-								<h1 class="mb-4 mt-3">Hi, I am <span>Sajal Srivastava</span></h1>
-								<p> <a href="Sajal Resume.pdf" class="btn btn-primary btn-outline-primary">Download Resume</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+	<<section id="home-section" class="hero">
+    <div class="home-slider owl-carousel">
+        <div class="slider-item">
+            <div class="overlay"></div>
+            <div class="container-fluid px-md-0">
+                <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+                    <div class="one-third order-md-last img" style="background-image:url(images/download.avif);">
+                        <div class="overlay"></div>
+                        <div class="overlay-1"></div>
+                    </div>
+                    <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+                        <div class="text">
+                            <span class="subheading">Hello! This is Sajal Srivastava</span>
+                            <h1 class="mb-4 mt-3">Hi, I am <span>Sajal Srivastava</span></h1>
+                            <p><a href="Sajal Resume.pdf" class="btn btn-primary btn-outline-primary">Download Resume</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-			<div class="slider-item">
-				<div class="overlay"></div>
-				<div class="container-fluid px-md-0">
-					<div class="row d-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-						<div class="one-third order-md-last img" style="background-image:url(images/download.avif);">
-							<div class="overlay"></div>
-							<div class="overlay-1"></div>
-						</div>
-						<div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-							<div class="text">
-								<span class="subheading">Hello! This is Sajal Srivastava</span>
-								<h1 class="mb-4 mt-3">Creative <span>UI/UX</span> Designer &amp; Developer</h1>
-								<p> <a href="Sajal Resume.pdf" class="btn btn-primary btn-outline-primary">Download CV</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+        <div class="slider-item">
+            <div class="overlay"></div>
+            <div class="container-fluid px-md-0">
+                <div class="row d-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+                    <div class="one-third order-md-last img" style="background-image:url(images/download.avif);">
+                        <div class="overlay"></div>
+                        <div class="overlay-1"></div>
+                    </div>
+                    <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+                        <div class="text">
+                            <span class="subheading">Hello! This is Sajal Srivastava</span>
+                            <h1 class="mb-4 mt-3">Creative <span>UI/UX</span> Designer &amp; Developer</h1>
+                            <p><a href="Sajal Resume.pdf" class="btn btn-primary btn-outline-primary">Download CV</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Add jQuery and Owl Carousel JS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $(".home-slider").owlCarousel({
+            items: 1,
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true,
+            nav: true,
+            dots: true,
+            mouseDrag: true,
+            touchDrag: true,
+            smartSpeed: 600,
+            navText: ["<span class='prev'>&#10094;</span>", "<span class='next'>&#10095;</span>"]
+        });
+    });
+</script>
+
+<!-- Add Owl Carousel CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+<style>
+    .prev, .next {
+        font-size: 24px;
+        color: white;
+        background: rgba(0,0,0,0.5);
+        padding: 10px;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+    .prev { left: 10px; }
+    .next { right: 10px; }
+</style>
+
 
 	<section class="ftco-counter img bg-light" id="section-counter">
 		<div class="container">
